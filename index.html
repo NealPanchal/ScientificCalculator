@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1 id="calculator-title">Scientific Calculator</h1>
+        <input type="text" id="display" readonly>
+        <div class="button-container">
+            <button onclick="clearDisplay()" class="large-button">C</button>
+            <button onclick="appendToDisplay('Math.sqrt(')" class="large-button">√</button>
+            <button onclick="appendToDisplay('**2')" class="large-button">x²</button>
+            <button onclick="appendToDisplay('**')" class="large-button">^</button>
+            <button onclick="appendToDisplay('Math.sin(')" class="large-button">sin</button>
+            <button onclick="appendToDisplay('Math.cos(')" class="large-button">cos</button>
+            <button onclick="appendToDisplay('Math.tan(')" class="large-button">tan</button>
+            <button onclick="appendToDisplay('Math.PI')" class="large-button">π</button>
+            <button onclick="appendToDisplay('/')" class="large-button">/</button>
+            <button onclick="appendToDisplay('7')" class="large-button">7</button>
+            <button onclick="appendToDisplay('8')" class="large-button">8</button>
+            <button onclick="appendToDisplay('9')" class="large-button">9</button>
+            <button onclick="appendToDisplay('*')" class="large-button">*</button>
+            <button onclick="appendToDisplay('4')" class="large-button">4</button>
+            <button onclick="appendToDisplay('5')" class="large-button">5</button>
+            <button onclick="appendToDisplay('6')" class="large-button">6</button>
+            <button onclick="appendToDisplay('-')" class="large-button">-</button>
+            <button onclick="appendToDisplay('1')" class="large-button">1</button>
+            <button onclick="appendToDisplay('2')" class="large-button">2</button>
+            <button onclick="appendToDisplay('3')" class="large-button">3</button>
+            <button onclick="appendToDisplay('+')" class="large-button">+</button>
+            <button onclick="appendToDisplay('Math.log10(')" class="large-button">log</button>
+            <button onclick="appendToDisplay('0')" class="large-button">0</button>
+            <button onclick="appendDecimal()" class="large-button">.</button>
+            <button onclick="calculateResult()" class="large-button">=</button>
+            <button onclick="convertToBinary()" class="large-button large-button-bin">BIN</button>
+            <button onclick="convertToHex()" class="large-button large-button-hex">HEX</button>
+            <button onclick="convertToOctal()" class="large-button large-button-octal">OCT</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
